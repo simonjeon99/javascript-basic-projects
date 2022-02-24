@@ -10,10 +10,30 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <!-- styles -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles1.css"/>
   </head>
   <body>
-    <h1>grocery bud project</h1>
+    <section class="section-center container">
+      <!-- form -->
+      <div class="card-body">
+      <form class="grocery-form">
+        <p class="alert"></p>
+        <h3 class="">grocery bud</h3>
+        <div class="form-control w-100">
+          <input type="text" id="grocery" placeholder="e.g. eggs" />
+          <button type="submit" class="submit-btn">
+            submit
+          </button>
+        </div>
+      </form>
+    </div>
+      <!-- list -->
+      <div class="grocery-container">
+        <div class="grocery-list"></div>
+        <button class="clear-btn">clear items</button>
+      </div>
+    </section>
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
